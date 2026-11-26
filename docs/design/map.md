@@ -15,6 +15,8 @@ after the owner approves that spec.
 - Layer 3 has its own repository and hexagon (ADR-0001).
 - Each layer admits memory at the scope of the unit it accepts, only after
   external acceptance (ADR-0002).
+- In our own loops the model is a driven actor; its tool calls are
+  proposals the handler validates (ADR-0003).
 - The owner sets goals. gzcontractor never sets its own objectives.
 - Strict hexagonal, in a spirit of strictness: exceptions are recorded as
   named departures with reasons.
@@ -29,7 +31,7 @@ after the owner approves that spec.
 
 | ID | Question | Mode | Blocks |
 | --- | --- | --- | --- |
-| C1 | Model direction: inside our own loops, is the model only a driven actor whose tool calls come back as proposals, with the model a driving actor only when an outside agent calls our MCP server? | HITL | Port shapes in every layer |
+| C1 | Model direction. **Settled by the owner 2026-11-26**: in our own loops the model is a driven actor behind an output port; its tool calls are untrusted proposals the handler validates. Reopen if we expose tools to outside agents (for example an MCP server). See ADR-0003. | HITL (settled) | Port shapes in every layer |
 | C2 | Memory ownership. **Settled by the owner 2026-11-26**: each layer admits memory at the scope of the unit it accepts (work package here, work order in gzfactory, task in gzyoke proposes only), written after acceptance. See ADR-0002. | HITL (settled) | Memory ports |
 | C3 | Mission contents: goal, acceptance owner, acceptance probe, budgets, allowed tickets | HITL, after A1 | gz-cartridge T7 |
 | C4 | Starting autonomy: level 1 (proposes, owner acts), and how a given action is promoted or demoted | HITL | Approval port |
