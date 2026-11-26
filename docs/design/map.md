@@ -12,7 +12,7 @@ after the owner approves that spec.
 
 ## Settled inputs
 
-- Layer 3 has its own repository and hexagon (ADR 0001).
+- Layer 3 has its own repository and hexagon (ADR-0001).
 - The owner sets goals. gzcontractor never sets its own objectives.
 - Strict hexagonal, in a spirit of strictness: exceptions are recorded as
   named departures with reasons.

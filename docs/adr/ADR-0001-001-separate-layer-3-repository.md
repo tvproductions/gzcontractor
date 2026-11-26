@@ -1,8 +1,21 @@
-# ADR 0001: Layer 3 lives in its own design-first repository
+---
+id: ADR-0001
+title: Layer 3 lives in its own design-first repository
+revision: 1
+state: Proposed
+decision_date: 2026-11-26
+revision_date: 2026-11-26
+approved_by: ""
+approved_revision: ""
+approval_ref: ""
+---
 
-Status: accepted by the owner on 2026-11-26 (decision card in the gzfactory
-project's book-impact discussion). Approval of this written edition is
-pending review of the pull request that adds it.
+# ADR-0001 — Layer 3 lives in its own design-first repository
+
+The owner chose this direction on 2026-11-26 (decision card in the gzfactory
+project's book-impact discussion). That choice is not approval of this written
+edition. The approval fields stay empty, and the state stays Proposed, until
+the owner approves revision 1.
 
 ## Context
 

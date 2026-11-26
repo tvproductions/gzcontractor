@@ -11,5 +11,5 @@ Add project-owned rules, verification commands, and operational skill routing he
 - The owner sets goals. gzcontractor proposes and sequences missions toward them; it never sets its own objectives.
 - gzcontractor may pick AFK tickets only. It never answers or acts on a HITL ticket for the owner.
 - A model's output is a proposal. The domain decides what is allowed and when a mission is done, from external acceptance evidence.
-- Record decisions in `docs/adr/`, numbered `NNNN-title.md`. Open design questions live in `docs/design/map.md`. Read it before design work; do not answer HITL tickets for the owner.
+- Record decisions in `docs/adr/` as `ADR-NNNN-EEE-title.md` (decision id, edition, title), with the metadata the gz-starter ADR policy requires. Leave approval fields empty and the state Proposed until the owner approves that edition. Open design questions live in `docs/design/map.md`. Read it before design work; do not answer HITL tickets for the owner.
 - Licensed books are cited by chapter and section only. Do not copy their text or code into this repository.
